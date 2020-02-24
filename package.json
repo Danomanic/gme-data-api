@@ -1,0 +1,35 @@
+{
+  "name": "gme-data-visualise",
+  "version": "1.0.0",
+  "description": "A tool to view the Training Data from Compass",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint src/*.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danomanic/gme-data-visualise.git"
+  },
+  "keywords": [
+    "scouts",
+    "training",
+    "data"
+  ],
+  "author": "Daniel J. Pomfret",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Danomanic/gme-data-visualise/issues"
+  },
+  "homepage": "https://github.com/Danomanic/gme-data-visualise#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongodb": "^3.5.3"
+  }
+}
