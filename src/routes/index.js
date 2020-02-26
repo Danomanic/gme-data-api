@@ -4,9 +4,10 @@ const roles = require('./roles');
 const modules = require('./modules');
 const groups = require('./groups');
 const districts = require('./districts');
+const pjson = require('../../package.json');
 
 routes.get('/', async (req, res) => {
-  res.status(200).json({ message: '' });
+  res.status(200).json({ version: pjson.version });
 });
 
 routes.use('/members', members);
