@@ -4,7 +4,7 @@ const db = require('../../utils/db');
 members.get('/', async (req, res) => {
   const data = await db.db('scouts')
     .collection('members')
-    .find({})
+    .find(req.query)
     .project({ _id: 0 })
     .toArray();
   res.status(200).json({ data });
