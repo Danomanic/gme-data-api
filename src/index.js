@@ -10,6 +10,6 @@ const { log } = console;
 
 app.use('/', routes);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => log(`API Running on: ${PORT}`));
